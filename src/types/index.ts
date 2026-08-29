@@ -1,0 +1,34 @@
+export interface Skill {
+  name: string;
+  icon: string;
+}
+export interface Icons {
+  icon: string;
+}
+
+export interface SkillCategory {
+  category: "frontend" | "backend" | "tools" | "methodologies";
+  label: string;
+  techs: Skill[];
+  methodologies?: string[];
+}
+
+export interface Project {
+  id: number;
+  title: string;
+  description: string;
+  stack: Icons[];
+  demoUrl: string | null;
+  githubUrl: string | null;
+  image: string | null;
+}
+
+export interface ExperienceItem {
+  id: number;
+  type: "work" | "education";
+  title: string;
+  institution: string;
+  period: string;
+  bullets: string[];
+  stack: string[];
+}
