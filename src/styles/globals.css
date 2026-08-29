@@ -1,0 +1,120 @@
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-subtle-foreground: var(--subtle-foreground);
+  --color-faint-foreground: var(--faint-foreground);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+}
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+  --muted-foreground: #9a9a9a;
+  --subtle-foreground: #565656;
+  --faint-foreground: #3c3c3c;
+  --border: #1a1a1a;
+  --border-strong: #292929;
+  --surface: #111111;
+  --surface-hover: #181818;
+}
+
+.light {
+  --background: #f5f3ef;
+  --foreground: #1c1c1c;
+  --muted-foreground: #8a8a85;
+  --subtle-foreground: #9a9890;
+  --faint-foreground: #d8d3c9;
+  --border: #e2ded6;
+  --border-strong: #d4cec3;
+  --surface: #eae8e3;
+  --surface-hover: #e0ddd6;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--background);
+  transition: background-color 0.5s ease;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+@keyframes navItemIn {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobile-nav-item {
+  opacity: 0;
+}
+
+.mobile-nav-item.animate {
+  animation: navItemIn 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.nav-item-inner {
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+  border-radius: 6px;
+}
+
+.mobile-nav-item:hover .nav-item-inner {
+  background-color: var(--surface);
+  transform: scale(1.02);
+}
+
+.mobile-bottom-btn {
+  opacity: 0;
+}
+
+.mobile-bottom-btn.animate {
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
