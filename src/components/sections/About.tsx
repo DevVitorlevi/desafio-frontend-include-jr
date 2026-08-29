@@ -15,7 +15,8 @@ export function About() {
     <section
       id="about"
       ref={sectionRef as React.RefObject<HTMLElement>}
-      className="min-h-screen flex flex-col justify-center py-32 mt-20 max-sm:mt-0 bg-black"
+      className="min-h-screen flex flex-col justify-center py-32 mt-20 max-sm:mt-0
+        bg-[#f5f3ef] dark:bg-black transition-colors duration-500"
     >
       <div className="max-w-6xl mx-auto px-6 w-full flex flex-col gap-20 max-lg:px-10">
         <div
@@ -27,19 +28,19 @@ export function About() {
           }}
         >
           <h2
-            className="leading-none tracking-tight max-sm:text-5xl text-8xl font-light text-[#b6b4b4]"
-            style={{
-              fontFamily: "'Plus Jakarta Sans', sans-serif",
-            }}
+            className="leading-none tracking-tight max-sm:text-5xl text-8xl font-light transition-colors duration-500
+              font-['Plus_Jakarta_Sans',sans-serif]
+              text-[#4b4a47] dark:text-[#b6b4b4]"
           >
-            Quem sou <span className="text-white font-extrabold ">Eu?</span>
+            Quem sou{" "}
+            <span className="font-extrabold text-[#1c1c1c] dark:text-white">
+              Eu?
+            </span>
           </h2>
           <p
-            className="max-w-lg text-[#565656] text-md max-sm:text-[0.8rem] leading-1.5"
-            style={{
-              fontFamily: "'Plus Jakarta Sans', sans-serif",
-              lineHeight: 1.5,
-            }}
+            className="max-w-lg text-md max-sm:text-[0.8rem] leading-normal transition-colors duration-500
+              font-['Plus_Jakarta_Sans',sans-serif]
+              text-[#79766c] dark:text-[#565656]"
           >
             Um Desenvolvedor Full Stack que transforma requisitos complexos em
             aplicações escaláveis, seguras e de alto impacto.
@@ -56,42 +57,57 @@ export function About() {
             }}
           >
             <p
-              style={{
-                fontFamily: "'Plus Jakarta Sans', sans-serif",
-                lineHeight: 1.85,
-              }}
-              className="text-[#615e5e] text-md"
+              className="text-md leading-[1.85] transition-colors duration-500
+                font-['Plus_Jakarta_Sans',sans-serif]
+                text-[#6b6a65] dark:text-[#615e5e]"
             >
-              Sou <strong className="text-white font-bold">Vitor Levi</strong>{" "}
+              Sou{" "}
+              <strong className="font-bold text-[#1c1c1c] dark:text-white">
+                Vitor Levi
+              </strong>{" "}
               Desenvolvedor Full Stack. Atualmente no primeiro semestre de
               Engenharia de Software na Universidade Federal do Ceará.
             </p>
 
             <p
-              style={{
-                fontFamily: "'Plus Jakarta Sans', sans-serif",
-                lineHeight: 1.85,
-              }}
-              className="text-[#615e5e] text-md"
+              className="text-md leading-[1.85] transition-colors duration-500
+                font-['Plus_Jakarta_Sans',sans-serif]
+                text-[#6b6a65] dark:text-[#615e5e]"
             >
               Já atuei em projetos para organizações internacionais e aplicações
               governamentais, sempre focado em entregar soluções que geram
               impacto real e mensurável. Me especializo em construir aplicações
               completas com{" "}
-              <strong className="text-[#CCCCCC] font-bold">TypeScript</strong>,{" "}
-              <strong className="text-[#CCCCCC] font-bold">Node.js</strong>,{" "}
-              <strong className="text-[#CCCCCC] font-bold">React</strong>,{" "}
-              <strong className="text-[#CCCCCC] font-bold">Next.js</strong> ,{" "}
-              <strong className="text-[#CCCCCC] font-bold">PostgreSQL</strong> e{" "}
-              <strong className="text-[#CCCCCC] font-bold">Docker</strong>.
+              <strong className="font-bold text-[#3a3a35] dark:text-[#CCCCCC]">
+                TypeScript
+              </strong>
+              ,{" "}
+              <strong className="font-bold text-[#3a3a35] dark:text-[#CCCCCC]">
+                Node.js
+              </strong>
+              ,{" "}
+              <strong className="font-bold text-[#3a3a35] dark:text-[#CCCCCC]">
+                React
+              </strong>
+              ,{" "}
+              <strong className="font-bold text-[#3a3a35] dark:text-[#CCCCCC]">
+                Next.js
+              </strong>{" "}
+              ,{" "}
+              <strong className="font-bold text-[#3a3a35] dark:text-[#CCCCCC]">
+                PostgreSQL
+              </strong>{" "}
+              e{" "}
+              <strong className="font-bold text-[#3a3a35] dark:text-[#CCCCCC]">
+                Docker
+              </strong>
+              .
             </p>
 
             <p
-              style={{
-                fontFamily: "'Plus Jakarta Sans', sans-serif",
-                lineHeight: 1.85,
-              }}
-              className="text-[#615e5e] text-md"
+              className="text-md leading-[1.85] transition-colors duration-500
+                font-['Plus_Jakarta_Sans',sans-serif]
+                text-[#6b6a65] dark:text-[#615e5e]"
             >
               Arquitetura limpa e código bem estruturado não são opcionais pra
               mim, são o padrão. Transformo requisitos complexos em produtos
@@ -100,10 +116,9 @@ export function About() {
             </p>
 
             <p
-              style={{
-                fontFamily: "'Plus Jakarta Sans', sans-serif",
-              }}
-              className="text-md italic text-[#313030]"
+              className="text-md italic transition-colors duration-500
+                font-['Plus_Jakarta_Sans',sans-serif]
+                text-[#a39f92] dark:text-[#313030]"
             >
               Sempre aprendendo, sempre construindo.
             </p>
@@ -116,32 +131,33 @@ export function About() {
               transition: "opacity 0.7s ease 0.3s, transform 0.7s ease 0.3s",
             }}
           >
-            <div className="flex flex-col overflow-hidden bg-[#0f0f0f70] border border-[#1A1A1A] rounded-2xl mb-6">
+            <div
+              className="flex flex-col overflow-hidden rounded-2xl mb-6 transition-colors duration-500
+                bg-[#eae8e3b3] dark:bg-[#0f0f0f70]
+                border border-[#e2ded6] dark:border-[#1A1A1A]"
+            >
               {infoItems.map((item, index) => (
                 <div
                   key={item.label}
-                  className="flex items-center justify-between px-7 py-5 gap-2 transition-all hover:bg-[#2b2a2a70]"
-                  style={{
-                    borderBottom:
+                  className={`flex items-center justify-between px-7 py-5 gap-2 transition-all duration-500
+                    hover:bg-[#e0ddd6b3] dark:hover:bg-[#2b2a2a70]
+                    ${
                       index < infoItems.length - 1
-                        ? "1px solid #141414"
-                        : "none",
-                  }}
+                        ? "border-b border-[#e2ded6] dark:border-[#141414]"
+                        : ""
+                    }`}
                 >
                   <span
-                    style={{
-                      fontFamily: "'JetBrains Mono', monospace",
-                      letterSpacing: "0.15em",
-                    }}
-                    className="text-[#3C3C3C] text-xs max-sm:text-[0.6rem]"
+                    className="text-xs max-sm:text-[0.6rem] transition-colors duration-500
+                      font-['JetBrains_Mono',monospace] tracking-[0.15em]
+                      text-[#b5b0a3] dark:text-[#3C3C3C]"
                   >
                     {item.label}
                   </span>
                   <span
-                    style={{
-                      fontFamily: "'Plus Jakarta Sans', sans-serif",
-                    }}
-                    className="text-[#ccc] text-md max-sm:text-[0.8rem] font-medium"
+                    className="text-md max-sm:text-[0.8rem] font-medium transition-colors duration-500
+                      font-['Plus_Jakarta_Sans',sans-serif]
+                      text-[#3a3a35] dark:text-[#ccc]"
                   >
                     {item.value}
                   </span>
@@ -151,7 +167,11 @@ export function About() {
             <a
               href="/curriculo.pdf"
               download="curriculo-vitor.pdf"
-              className="flex items-center justify-center gap-2 rounded-2xl border border-[#292929] bg-[#111111] px-6 py-5 tracking-widest text-[#9A9A9A] no-underline transition-all duration-200 hover:border-[#5A5959] hover:bg-[#181818] hover:text-white"
+              className="flex items-center justify-center gap-2 rounded-2xl px-6 py-5 tracking-widest no-underline transition-all duration-200
+                border bg-[#eae8e3] text-[#6b6a65] border-[#d4cec3]
+                hover:border-[#b5ac9c] hover:bg-[#e0ddd6] hover:text-[#1c1c1c]
+                dark:bg-[#111111] dark:text-[#9A9A9A] dark:border-[#292929]
+                dark:hover:border-[#5A5959] dark:hover:bg-[#181818] dark:hover:text-white"
             >
               <span>Download CV</span>
             </a>
