@@ -205,7 +205,7 @@ export function Experience() {
           <h2
             className="leading-none tracking-tight max-sm:text-5xl text-8xl font-light transition-colors duration-500
               font-['Plus_Jakarta_Sans',sans-serif]
-              text-[#79766c] dark:text-[#b6b4b4]"
+              text-[#4b4a47] dark:text-[#b6b4b4]"
           >
             Minha{" "}
             <span className="font-extrabold text-[#1c1c1c] dark:text-white">
