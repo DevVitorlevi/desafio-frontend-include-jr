@@ -22,7 +22,6 @@ export interface Project {
   githubUrl: string | null;
   image: string | null;
 }
-
 export interface ExperienceItem {
   id: number;
   type: "work" | "education";
@@ -31,4 +30,11 @@ export interface ExperienceItem {
   period: string;
   bullets: string[];
   stack: string[];
+}
+
+export interface Certificate {
+  id: number;
+  title: string;
+  description: string;
+  image: string | null;
 }
