@@ -3,8 +3,8 @@ import { ExternalLink } from "lucide-react";
 import { projects } from "@/constants/projects";
 import { Project } from "@/types";
 import { useTheme } from "@/hooks/useTheme";
-import GithubDark from "@/assets/github-dark.png";
-import GithubLight from "@/assets/github-light.png";
+import GithubDark from "@/assets/projects/github-dark.png";
+import GithubLight from "@/assets/projects/github-light.png";
 
 function useItemVisible() {
   const ref = useRef<HTMLDivElement>(null);

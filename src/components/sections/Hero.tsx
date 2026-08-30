@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import Lanyard from "@/components/ui/Lanyard";
-import Me from "@/assets/card-front.png";
+import Me from "@/assets/projects/card-front.png";
 
 export function Hero() {
   const sectionRef = useRef<HTMLElement>(null);

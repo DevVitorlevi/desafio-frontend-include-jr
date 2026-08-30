@@ -1,8 +1,8 @@
 import { Certificate } from "@/types";
-import CertificadoJS from "@/assets/certificado_js.jpg";
-import CertificadoNext from "@/assets/certificado_next.jpg";
-import CertificadoNode from "@/assets/certificado_node.jpg";
-import CertificadoReact from "@/assets/certificado_react.jpg";
+import CertificadoJS from "@/assets/certificates/certificado_js.jpg";
+import CertificadoNext from "@/assets/certificates/certificado_next.jpg";
+import CertificadoNode from "@/assets/certificates/certificado_node.jpg";
+import CertificadoReact from "@/assets/certificates/certificado_react.jpg";
 
 export const certificates: Certificate[] = [
   {

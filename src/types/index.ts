@@ -38,3 +38,15 @@ export interface Certificate {
   description: string;
   image: string | null;
 }
+
+export interface FavoriteGame {
+  id: string;
+  title: string;
+  image: string;
+}
+
+export interface FollowedTeam {
+  id: string;
+  name: string;
+  image: string;
+}
