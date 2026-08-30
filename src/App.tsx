@@ -6,6 +6,7 @@ import { Skills } from "./components/sections/Skills";
 import { Experience } from "./components/sections/Experience";
 import { Projects } from "./components/sections/Projects";
 import { Certificates } from "./components/sections/Certificates";
+import { Hobbies } from "./components/sections/Hobbies";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Hobbies />
         <Experience />
         <Certificates />
         <Skills />
