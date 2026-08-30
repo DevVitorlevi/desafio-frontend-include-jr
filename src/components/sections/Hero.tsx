@@ -83,14 +83,14 @@ export function Hero() {
                 VER PROJETOS
               </button>
               <button
-                onClick={() => handleScroll("#contact")}
+                onClick={() => handleScroll("#skills")}
                 className="cursor-pointer border transition-all duration-200 hover:scale-105
                   font-['JetBrains_Mono',monospace] text-[12px] tracking-[0.12em]
                   py-2.5 px-5.5 rounded-sm
                   bg-[#eae8e3] text-[#6b6a65] border-[rgba(0,0,0,0.1)] hover:border-[rgba(0,0,0,0.3)]
                   dark:bg-[#121212] dark:text-[#9A9A9A] dark:border-[rgba(255,255,255,0.1)] dark:hover:border-[rgba(255,255,255,0.3)]"
               >
-                ENTRAR EM CONTATO
+                VER HABILIDADES
               </button>
             </div>
           </div>
